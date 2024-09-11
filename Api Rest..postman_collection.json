@@ -1,0 +1,548 @@
+{
+	"info": {
+		"_postman_id": "33ccd7c9-e145-40d0-92d2-6dd92e45c256",
+		"name": "Api Rest.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38011054",
+		"_collection_link": "https://iud-1102118062.postman.co/workspace/IUD-1102118062-Workspace~9c6588f2-51dc-4fe9-aafd-81b13a4b330f/collection/38011054-33ccd7c9-e145-40d0-92d2-6dd92e45c256?action=share&source=collection_link&creator=38011054"
+	},
+	"item": [
+		{
+			"name": "Listar Genero.",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"the avengers.\",\r\n   \"status\" : \"Activo\",\r\n   \"description\" : \"ciencia ficcion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/genero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"genero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Genero.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"the avengers.\",\r\n   \"status\" : \"Activo\",\r\n   \"description\" : \"ciencia ficcion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/genero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"genero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Genero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"the covernat\",\r\n   \"status\" : \"Activo\",\r\n   \"description\" : \"ciencia ficcion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/Genero/66d1eb89f0f8801578eeb8e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"Genero",
+						"66d1eb89f0f8801578eeb8e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Genero.",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deleted\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/genero/66d1d0a9f0f8801578eeb8cf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"genero",
+						"66d1d0a9f0f8801578eeb8cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Director",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/director",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"director"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Director",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Michael Lucas\",\r\n    \"status\" : \"Activo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/director",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"director"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Director.",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Elena Jhonson\",\r\n    \"status\" : \"Inactivo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/director/66d204b7fbd0fcf37bbf1d2e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"director",
+						"66d204b7fbd0fcf37bbf1d2e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Director.",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deleted\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/director/66d204b7fbd0fcf37bbf1d2e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"director",
+						"66d204b7fbd0fcf37bbf1d2e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Productora.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/productora",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"productora"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Productora",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Discowarner\",\r\n    \"status\" : \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/productora",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"productora"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Productora",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"visualMovies\",\r\n    \"status\":\"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/productora/66d2114d6f32b0a20a04ad43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"productora",
+						"66d2114d6f32b0a20a04ad43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Productora",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"delete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/productora/66d2114d6f32b0a20a04ad43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"productora",
+						"66d2114d6f32b0a20a04ad43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Tipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ficción\",\r\n    \"description\": \"Basada en la historia de un libro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Tipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Acción\",\r\n    \"description\": \"Basada en hechos reales\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipo/66d216f7135ac1abc77b0b82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo",
+						"66d216f7135ac1abc77b0b82"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tipo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"delete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipo/66d216f7135ac1abc77b0b82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo",
+						"66d216f7135ac1abc77b0b82"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/media",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\": \"E344464c\",\r\n    \"title\": \"the simpsom\",\r\n    \"url\" : \"http://www.theSimpsom.com\",\r\n    \"genero\": {\r\n        \"name\": \" Ciencia ficción\",\r\n        \"status\": \"Activo\",\r\n        \"description\": \"Pelicula de ciencia ficcion\",\r\n        \"_id\": \"66df22afb6392b0be0519c75\"\r\n    },\r\n    \"director\": {\r\n        \"name\": \"Michael Lucas\",\r\n        \"status\": \"Activo\",\r\n        \"_id\": \"66df231db6392b0be0519c77\"\r\n    },\r\n    \"productora\": {\r\n        \"name\": \"Discowarner\",\r\n        \"status\": \"Activo\",\r\n        \"_id\": \"66df2364b6392b0be0519c79\"\r\n    },\r\n    \"tipo\": {\r\n        \"name\": \"Acicción\",\r\n        \"description\": \"Basada en la historia de un libro\",\r\n        \"_id\": \"66df239ab6392b0be0519c7b\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/media",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Media",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"serial\": \"E45465bc\",\r\n    \"title\": \"tratata\",\r\n    \"url\" : \"http://www.tratata.com\",\r\n    \"genero\": {\r\n        \"name\": \" Ciencia ficción\",\r\n        \"status\": \"Activo\",\r\n        \"description\": \"Pelicula de ciencia ficcion\",\r\n        \"_id\": \"66df22afb6392b0be0519c75\"\r\n    },\r\n    \"director\": {\r\n        \"name\": \"Michael Lucas\",\r\n        \"status\": \"Activo\",\r\n        \"_id\": \"66df231db6392b0be0519c77\"\r\n    },\r\n    \"productora\": {\r\n        \"name\": \"Discowarner\",\r\n        \"status\": \"Activo\",\r\n        \"_id\": \"66df2364b6392b0be0519c79\"\r\n    },\r\n    \"tipo\": {\r\n        \"name\": \"Acicción\",\r\n        \"description\": \"Basada en la historia de un libro\",\r\n        \"_id\": \"66df239ab6392b0be0519c7b\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/media/66df2aa400157c91175c2fa8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"media",
+						"66df2aa400157c91175c2fa8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Media",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"delete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/media/66df2aa400157c91175c2fa8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"media",
+						"66df2aa400157c91175c2fa8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
